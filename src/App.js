@@ -7,8 +7,12 @@ class App extends Component {
     super(props)
     this.state = {
       items: [
-        { id: 0, name: "Hanna" },
-        { id: 1, name: "ReactJS" },
+        { id: 0, name: "This", item: "Item 1" },
+        { id: 1, name: "is", item: "Item 2" },
+        { id: 2, name: "ReactJS", item: "Item 3" },
+        { id: 3, name: "ID", item: "Item 4" },
+        { id: 4, name: "Example", item: "Item 5" },
+        { id: 5, name: "Hanna", item: "Item 6" },
       ]
     }
   }
@@ -24,14 +28,15 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">ID Example</h1>
         </header>
-        <ul id="todo">
+        <ul id="todo" className="List-style">
           {this.state.items.map((item, i) =>
             <li
-              className='list-group-item'
+              className='list-group-item List-item'
               key={i}
               data-id={item.name}>
-              {item.name}
+              {item.item}
               <button
+                className="Button-style"
                 onClick={this.handleClick.bind(this, item.name)}
               >
                 Click Me

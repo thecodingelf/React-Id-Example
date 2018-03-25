@@ -22,6 +22,18 @@
   font-size: large;
 }
 
+.List-style {
+  list-style: none;
+}
+
+.List-item {
+  padding: 1em;
+}
+
+.Button-style {
+  margin-left: 1em;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
