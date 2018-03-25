@@ -33,7 +33,7 @@ class App extends Component {
             <li
               className='list-group-item List-item'
               key={i}
-              data-id={item.name}>
+              data-id={item.id}>
               {item.item}
               <button
                 className="Button-style"
